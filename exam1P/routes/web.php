@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+route::view('/','welcome')->name('productos');
 
-route::view('/bp','productos')->name('productos');
+//route::view('/bp','productos')->name('productos');
