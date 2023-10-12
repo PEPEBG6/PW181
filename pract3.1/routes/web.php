@@ -30,5 +30,8 @@ use Illuminate\Support\Facades\Route;
 
 //rutas de tipo view
 route::view('/','welcome')->name('apodoinicio');
-route::view('/form','formulario')->name('apodoformulario');
-route::view('/loquequieroolvidar','recuerdos')->name('apodorecuerdo');
+
+
+ Route::get('/v1', function () {
+     return view('vista1');
+ });

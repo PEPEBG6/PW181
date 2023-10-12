@@ -10,7 +10,9 @@
 
 </head>
 <body>
-    @include('partials.navbar')
+    @component('partials.navbar')
+    
+    @endcomponent
 
     @yield('contenido')
 
