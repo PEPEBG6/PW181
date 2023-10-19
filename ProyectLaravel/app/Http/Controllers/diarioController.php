@@ -25,7 +25,25 @@ class diarioController extends Controller
     }
 
 
+    public function guardarRecuerdo(Request $req){
 
+       // return $req->all();
+
+       echo "<p>";
+
+       echo $req->ip();
+       echo " - ";
+       echo $req->path();
+       echo " - ";
+       echo $req->method();
+       echo " - ";
+       echo $req->input('txtTitulo');
+       echo " - ";
+       echo $req->url();
+
+       echo "</p>";
+        
+    }
 
 
 }
