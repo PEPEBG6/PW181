@@ -1,0 +1,18 @@
+.custom-card {
+    position: absolute;
+    left: 170px; 
+    bottom: 160px; 
+}
+
+.custom2-card {
+    position: absolute;
+    left: 560px; 
+    bottom: 160px; 
+}
+
+
+.custom3-card {
+    position: absolute;
+    left: 970px; 
+    bottom: 160px; 
+}

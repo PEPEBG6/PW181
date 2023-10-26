@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image:url(fondo.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    margin: 0%;
+    padding: auto;
+    width: 400px;
+    position: relative;
+    top: 100px;
+    right: 80px;
+    left: 600px;
+}
+.btn{
+    height: 40px;
+}
+img{
+    margin: 0%;
+    padding: auto;
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: -20px;
+    right: 30px;
+    left: 75px;
+
+}
