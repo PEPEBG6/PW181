@@ -8,6 +8,8 @@
 
 @section('contenido')
 
+    
+
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -39,7 +41,19 @@
     </div>
 
 
-    
+    <footer class="footer text-center">
+        <div class="nombre p-1">
+          <p >Biblioteca PEPE´S </p>
+        </div>
+
+        <div class="copyright p-1">
+            <p >&copy;2023 JoséLuis Bernardo Gutiérrez</p>
+        </div>
+        
+        <div class="fecha p-1">
+            <p >27/10/2023</p>
+        </div>
+    </footer>
 
 
 

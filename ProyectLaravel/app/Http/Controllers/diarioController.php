@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\validadorFormRecuerdos;
+use App\Http\Requests\validadorFormRegistros;
 
 class diarioController extends Controller
 {
