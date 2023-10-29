@@ -9,11 +9,11 @@
         <form action="#" method="#">
             <div class="mb-4">
                 <label for="recipient-name" class="col-form-label fw-bold">Usuario:</label>
-                <input type="text" class="form-control" id="recipient-name" required>
+                <input type="text" class="form-control" id="recipient-name" required placeholder="Correo Electrónico">
             </div>
             <div class="mb-4">
                 <label for="recipient-name" class="col-form-label fw-bold">Contraseña:</label>
-                <input type="text" class="form-control" id="recipient-name" required>
+                <input type="text" class="form-control" id="recipient-name" required placeholder="Contraseña    ">
             </div>
             <div class="d-grid gap-2">
                 <button class="btn btn-primary" type="submit" href="/almacen">Iniciar</button>
