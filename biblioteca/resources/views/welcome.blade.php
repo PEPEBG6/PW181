@@ -51,7 +51,7 @@
         </div>
         
         <div class="fecha p-1">
-            <p >27/10/2023</p>
+            <p >{{date('d F Y')}}</p>
         </div>
     </footer>
 
