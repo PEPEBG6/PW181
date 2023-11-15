@@ -52,7 +52,7 @@
 
   
   <div class="card-body">
-   <form method='POST' action='/guardarRecuerdo'>
+   <form method='POST' action='/recuerdo'>
       @csrf 
 
     <div class="mb-3">

@@ -12,7 +12,7 @@
         </li>
       
         <li class="nav-item">
-          <a class="nav-link {{ request()-> routeIs('apodoFormulario')? 'text-primary':''}}" href="/form">Formulario</a>
+          <a class="nav-link {{ request()-> routeIs('recuerdo.create')? 'text-primary':''}}" href="/recuerdo/create">Formulario</a>
         </li>
 
         <li class="nav-item">
