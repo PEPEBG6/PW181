@@ -16,7 +16,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link {{ request()-> routeIs('apodoRecuerdos')? 'text-warning':''}}" aria-current="page" href="{{route('apodoRecuerdos')}}">Recuerdos</a>
+          <a class="nav-link {{ request()-> routeIs('recuerdo.idex')? 'text-warning':''}}" aria-current="page" href="/recuerdo">Recuerdos</a>
         </li>
         
         <li class="nav-item dropdown">

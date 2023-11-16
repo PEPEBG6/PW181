@@ -21,8 +21,6 @@ use App\Http\Controllers\ControllerCrudD;
 //Rutas agrupadas por controlador 
 Route::controller(diarioController::class)->group(function (){
      Route::get('/','metodoinicio')->name('apodoinicio');
-     //Route::get('/form','metodoFormulario')->name('apodoFormulario');
-     Route::get('/loquequieroolvidar','metodoRecuerdos')->name('apodoRecuerdos');
 });
  
   
@@ -30,6 +28,7 @@ Route::controller(diarioController::class)->group(function (){
 //vistas para el controllerCrudD
 Route::get('/recuerdo/create', [ControllerCrudD::class,'create'])->name('recuerdo.create');
 Route::post('/recuerdo',[ControllerCrudD::class,'store'])->name('recuerdo.store');
+Route::get('/recuerdo', [ControllerCrudD::class,'index'])->name('recuerdo.index');
 
 
 
