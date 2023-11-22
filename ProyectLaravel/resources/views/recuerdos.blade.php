@@ -9,6 +9,8 @@
 
 @section('contenido')
 
+   @include('partials.modal')
+
    <h1 class="display-1 text-center text-danger"> Recuerdos </h1>
 
    
@@ -23,7 +25,9 @@
             <h5 class="card-title fw-bold ">{{$item->titulo}}</h5>
             <h5 class="card-tittle fw-medium">{{$item->fecha}}</h5>
             <p class="card-text fw-lighter">{{$item->recuerdo}}</p>
-            <a href="#" class="btn btn-warning">Editar</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">
+               Editar
+            </button>
             <a href="#" class="btn btn-danger">Eliminar</a>
          </div>
       </div>
