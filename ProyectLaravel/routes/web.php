@@ -29,6 +29,7 @@ Route::controller(diarioController::class)->group(function (){
 Route::get('/recuerdo/create', [ControllerCrudD::class,'create'])->name('recuerdo.create');
 Route::post('/recuerdo',[ControllerCrudD::class,'store'])->name('recuerdo.store');
 Route::get('/recuerdo', [ControllerCrudD::class,'index'])->name('recuerdo.index');
+Route::put('/recuerdo/{id}/confirm',[ControllerCrudD::class,'update'])->name('recuerdo.update');
 
 
 

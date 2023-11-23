@@ -1,6 +1,5 @@
-  
 <!-- Modal -->
-<div class="modal fade" id="editar{{$item->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="eliminar{{$item->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -13,17 +12,15 @@
 
             <form method='POST' action='/recuerdo/{{$item->id}}/confirm'>
                     @csrf 
-                    {!! method_field('PUT') !!}
+                    {!! method_field('DELETE') !!}
                     
                     <div class="mb-3">
                         <label class="form-label">Titulo</label>
-                        <input type="text" name="txtTitulo" class="form-control" value="{{$item->titulo}}">
                         <p class="text-danger fw-bold">{{$errors->first('txtTitulo')}}</p>
                     </div>
                     
                     <div class="mb-3">
                         <label class="form-label">Recuerdo</label>
-                        <input type="text" name="txtRecuerdo" class="form-control" value="{{$item->recuerdo}}">
                         <p class="text-danger fw-bold">{{$errors->first('txtRecuerdo')}}</p>
                     </div>
                     
@@ -38,7 +35,7 @@
 
                 <div class="modal-footer">
                     <div class="card-footer text-body-secondary">
-                        <button type="submit" class="btn btn-outline-warning">Editar Recuerdo</button>
+                        <button type="submit" class="btn btn-outline-warning">Eliminar Recuerdo</button>
                     </div>
                 </div>
             </form>
