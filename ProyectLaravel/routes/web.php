@@ -30,6 +30,7 @@ Route::get('/recuerdo/create', [ControllerCrudD::class,'create'])->name('recuerd
 Route::post('/recuerdo',[ControllerCrudD::class,'store'])->name('recuerdo.store');
 Route::get('/recuerdo', [ControllerCrudD::class,'index'])->name('recuerdo.index');
 Route::put('/recuerdo/{id}/confirm',[ControllerCrudD::class,'update'])->name('recuerdo.update');
+Route::delete('/recuerdo/{id}', [ControllerCrudD::class, 'destroy'])->name('recuerdo.destroy');
 
 
 

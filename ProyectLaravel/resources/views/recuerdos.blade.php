@@ -37,13 +37,14 @@
                Editar
             </button>
             
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar{{$item->id}}">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmarEliminar{{$item->id}}">
                Eliminar
             </button>
          </div>
       </div>
       
       @include('partials.modal')
+      @include('partials.modalElim')
 
    @endforeach
 

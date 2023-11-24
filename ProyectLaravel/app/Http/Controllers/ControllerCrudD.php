@@ -81,12 +81,10 @@ class ControllerCrudD extends Controller
      */
     public function destroy(string $id)
     {
-        DB::table('tb_recuerdos')->where('id',$id)->delete([
-            
-            "titulo"=> $request->input('txtTitulo'),
-            "recuerdo"=>$request->input('txtRecuerdo'),
-            "updated_at"=>Carbon::now(),
+        DB::table('tb_recuerdos')->where('id', $id)->delete();
 
-        ]);
+        return redirect('/recuerdo')->with('confirmacion', 'Tu recuerdo se eliminó de la BD');
     }
+
 }
+
